@@ -10,8 +10,9 @@ import (
 
 func main() {
 
-	input, err := os.ReadFile("input1.txt")
-	// input, err := os.ReadFile("example.txt")
+	args := os.Args
+	input, err := os.ReadFile(args[1])
+
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
