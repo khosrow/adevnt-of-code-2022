@@ -23,10 +23,6 @@ func main() {
 			fmt.Println("start-of-packet marker: ", distinctChars(signal, i, 4))
 			break
 		}
-		if distinctChars(signal, i, 14) > 0 {
-			fmt.Println("start-of-message marker: ", distinctChars(signal, i, 14))
-			break
-		}
 	}
 
 	for i := 0; i < len(signal); i++ {
